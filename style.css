@@ -1,0 +1,147 @@
+:root {
+  --textColor: rgba(255, 255, 255, 0.5);
+}
+
+body {
+  font-family: "Zen Dots", cursive;
+}
+
+.header {
+  height: 60px;
+  background: #373a3c;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    height: 100%;
+    padding: 15px 0px !important;
+  }
+}
+
+@media (max-width: 1070px) {
+  .header {
+    padding: 0px 15px;
+  }
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 600px) {
+  .header_container {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+  }
+}
+
+.menu_items {
+  display: flex;
+}
+
+@media (max-width: 900px) {
+  .menu_items {
+    display: none;
+  }
+}
+
+.menu_mbMenu {
+  border: 1px solid #8dd83d;
+  padding: 5px;
+  border-radius: 4px;
+  color: var(--textColor);
+  display: none;
+}
+@media (max-width: 900px) {
+  .menu_mbMenu {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .menu_mbMenu {
+    margin-bottom: 15px;
+  }
+}
+.menu_item {
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--textColor);
+  margin-right: 26px;
+  cursor: pointer;
+}
+
+.menu_search {
+  margin-left: 10px;
+}
+
+.header_searchInp {
+  width: 209.8px;
+  height: 38px;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+  padding: 9px 15px;
+}
+
+.header_searchInp::placeholder {
+  font-size: 16px;
+  line-height: 21px;
+  color: #435766;
+  mix-blend-mode: normal;
+  opacity: 0.4;
+}
+
+@media (max-width: 600px) {
+  .header_searchInp {
+    margin-bottom: 15px;
+  }
+}
+
+.menu_auth {
+  display: flex;
+}
+
+.wrapper {
+  width: 1040px;
+  margin: auto;
+}
+
+.menu_auth {
+  display: flex;
+  align-items: center;
+  margin-left: 22px;
+}
+
+.header_personIcon {
+  margin-right: 4px;
+}
+
+.header_mybox {
+  margin-right: 9px;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--textColor);
+}
