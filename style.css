@@ -16,6 +16,7 @@ body {
 @media (max-width: 600px) {
   .logo {
     margin-bottom: 15px;
+    cursor: pointer;
   }
 }
 
